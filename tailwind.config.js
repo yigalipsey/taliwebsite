@@ -8,8 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "var(--background)", // צבע רקע דינמי
+        foreground: "var(--foreground)", // צבע טקסט דינמי
+      },
+      fontFamily: {
+        rubik: ['"Rubik"', "sans-serif"], // הוספת פונט Rubik
+        secular: ['"Secular One"', "sans-serif"], // הוספת פונט Secular One
       },
     },
   },
