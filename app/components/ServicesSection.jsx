@@ -6,7 +6,7 @@ const services = [
     title: "היתרים",
     description:
       "שירותי עריכת והכנת גרמושקא להיתרי בנייה, כולל פרטי תוכניות מדויקים המותאמים לדרישות הרשויות המקומיות.",
-    image: "/images/permitsImg.png",
+    image: "/images/PermitsImg.png",
     pdf: "/pdfs/romano.pdf",
   },
   {
