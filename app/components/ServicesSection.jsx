@@ -1,47 +1,40 @@
 import React from "react";
 
-// ייבוא התמונות
-import PermitsImg from "../../public/images/permitsImg.png";
-import TenantsImg from "../../public/images/model.png";
-import DesignImg from "../../public/images/interior-design.png";
-import SharedPlanImg from "../../public/images/shared-plan.png";
-import KitchenImg from "../../public/images/kitchen.png";
-
 // נתונים של השירותים
 const services = [
   {
     title: "היתרים",
     description:
       "שירותי עריכת והכנת גרמושקא להיתרי בנייה, כולל פרטי תוכניות מדויקים המותאמים לדרישות הרשויות המקומיות.",
-    image: PermitsImg,
+    image: "/images/permitsImg.png",
     pdf: "/pdfs/romano.pdf",
   },
   {
     title: "שינויי דיירים",
     description:
       "ניהול תהליכי שינויי דיירים, כולל תכנון ושדרוגים מותאמים אישית לצורכי הדיירים.",
-    image: TenantsImg,
+    image: "/images/model.png",
     pdf: "/pdfs/tenants-example.pdf",
   },
   {
     title: "תכנון",
     description:
       "תכנון עיצוב פנים, כולל התאמה פונקציונלית ויצירת חוויית משתמש ייחודית לפרויקטים.",
-    image: DesignImg,
+    image: "/images/interior-design.png",
     pdf: "/pdfs/design-example.pdf",
   },
   {
     title: "תשריט בית משותף",
     description:
       "הכנה ועריכה של תשריטים לבית משותף, עם חלוקה מפורטת של שטחים ודירות, בהתאמה לחוקי התכנון והבנייה.",
-    image: SharedPlanImg,
+    image: "/images/shared-plan.png",
     pdf: "/pdfs/shared-plan-example.pdf",
   },
   {
     title: "מטבחים",
     description:
       "תכנון מטבח מותאם אישית, עם פתרונות אחסון פרקטיים ועיצוב אסתטי המותאם ללקוח.",
-    image: KitchenImg,
+    image: "/images/kitchen.png",
     pdf: "/pdfs/kitchen-example.pdf",
   },
 ];
@@ -71,7 +64,7 @@ const ServicesSection = () => {
               {/* תמונה */}
               <div className="mb-4">
                 <img
-                  src={service.image.src}
+                  src={service.image}
                   alt={service.title}
                   className="h-14 w-14 mx-auto object-contain"
                 />
